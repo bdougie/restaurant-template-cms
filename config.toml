@@ -1,0 +1,31 @@
+baseurl = "/"
+title = "Tasty Licks"
+languageCode = "en-us"
+theme = "hyde"
+
+[params]
+  layoutReverse = true
+  description = "An example website for restaurants built by [@eliwilliamson](https://github.com/eliwilliamson) on [hugo](http://gohugo.io/)."
+  copyright = " "
+
+
+[[menu.main]]
+    name = "Food"
+    url  = "/food"
+    weight = 1
+[[menu.main]]
+    name = "Drink"
+    url  = "/drink"
+    weight = 2
+[[menu.main]]
+    name = "About"
+    url  = "/about"
+    weight = 3
+[[menu.main]]
+    name = "Gallery"
+    url  = "/gallery"
+    weight = 4
+[[menu.main]]
+    name = "Make A Reservation"
+    url  = "/contact"
+    weight = 5
