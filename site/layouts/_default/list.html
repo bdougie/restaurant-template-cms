@@ -2,14 +2,23 @@
 
 <div class="content container">
   <h1>{{ .Section }}</h1>
-  <ul>
-    {{ range .Data.Pages.ByPublishDate }}
-      <li>
-        <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-        <p>{{ .Params.price }}</p>
-      </li>
-    {{ end }}
-  </ul>
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    <section>
+      {{ if eq "categories" $taxonomyname }}
+        {{ range $key, $value := $taxonomy }}
+          <h2><em>{{ $key }}</em></h2>
+          <ul>
+          {{ range .Pages }}
+            <li>
+              <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+              <p>{{ .Params.price }}</p>
+            </li>
+          {{ end }}
+          </ul>
+        {{ end }}
+      {{ end }}
+    </section>
+  {{ end }}
 </div>
 
 {{ partial "footer" . }}
