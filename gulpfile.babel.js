@@ -7,9 +7,7 @@ import neatgrid from "postcss-neat";
 import nestedcss from "postcss-nested";
 import colorfunctions from "postcss-colour-functions";
 import hdBackgrounds from "postcss-at2x";
-import cssvars from "postcss-simple-vars-async";
 import cssextend from "postcss-simple-extend";
-import styleVariables from "./config/variables";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
@@ -32,8 +30,7 @@ gulp.task("css", () => (
       colorfunctions(),
       nestedcss(),
       hdBackgrounds(),
-      cssextend(),
-      cssvars({variables: styleVariables})]))
+      cssextend()]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));

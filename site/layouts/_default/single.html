@@ -6,11 +6,6 @@
     <span class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
         {{ .Content }}
   </div>
-
-  {{ if and (isset .Site.Params "disqusShortname") (ne .Site.Params.disqusShortname "") }}
-    <h2>Comments</h2>
-    {{ partial "disqus" . }}
-  {{ end }}
 </div>
 
 {{ partial "footer" . }}
