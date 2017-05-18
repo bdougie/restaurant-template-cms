@@ -1,7 +1,23 @@
-# hugo-restaurant-template by @eliwilliamson
+## Usage
 
-## getting started
+Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo, run:
 
-- `brew install hugo`
-- `hugo server`
-- in your browser, go to [http://localhost:1313/](http://localhost:1313/)
+```bash
+brew install hugo
+```
+
+Next, clone this repository and run:
+
+```bash
+npm install
+npm start
+```
+
+Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
+refresh the page when stylesheets or content changes.
+
+To build your static output to the `/dist` folder, use:
+
+```bash
+npm run build
+```

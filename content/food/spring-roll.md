@@ -1,9 +1,0 @@
-+++
-date = "2017-05-17T13:03:58-04:00"
-Categories = ["lunch"]
-type = "rolls"
-title = "slanted door spring rolls"
-Description = "gulf shrimp, pork, mint, shallot mayonnaise, peanut sauce"
-price = "14"
-+++
-
