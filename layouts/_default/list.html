@@ -1,0 +1,31 @@
+{{ partial "head.html" . }}
+<body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
+
+{{ partial "sidebar.html" . }}
+
+  <div class="content container">
+    <h1>{{ .Section }}</h1>
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            <h2><em>{{ $key }}</em></h2>
+            {{ range $value.Pages.GroupByParam "type" }}
+              <h3>{{ .Key }}</h3>
+              <hr>
+              <ul>
+              {{ range .Pages }}
+                <li>
+                  <p><strong>{{ .Title }}:</strong> {{ .Description }}</p>
+                  <p>{{ .Params.price }}</p>
+                </li>
+              {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
+  </div>
+</body>
+</html>
