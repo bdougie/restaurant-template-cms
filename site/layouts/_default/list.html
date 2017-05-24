@@ -2,26 +2,62 @@
 
 <div class="content container">
   <h1>{{ .Section }}</h1>
-  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
-    <section>
-      {{ if eq "categories" $taxonomyname }}
-        {{ range $key, $value := $taxonomy }}
-          <h2><em>{{ $key }}</em></h2>
-          {{ range $value.Pages.GroupByParam "type" }}
-            <h3>{{ .Key }}</h3>
-            <hr>
-            <ul>
-            {{ range .Pages }}
-              <li>
-                <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
-                <p>{{ .Params.price }}</p>
-              </li>
+  {{ if eq .Section "food" }}
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            {{ if ne $key "drinks"}}
+              <h2><em>{{ $key }}</em></h2>
+              <hr>
+              {{ range $value.Pages.GroupByParam "type" }}
+                <h3>{{ .Key }}</h3>
+                <ul>
+                {{ range .Pages }}
+                  <li>
+                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                    <p>{{ .Params.price }}</p>
+                  </li>
+                {{ end }}
+                </ul>
+              {{ end }}
             {{ end }}
-            </ul>
           {{ end }}
         {{ end }}
+      </section>
+    {{ end }}
+  {{ else if eq .Section "drinks" }}
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      <section>
+        {{ if eq "categories" $taxonomyname }}
+          {{ range $key, $value := $taxonomy }}
+            {{ if eq $key "drinks"}}
+              {{ range $value.Pages.GroupByParam "type" }}
+                <h3>{{ .Key }}</h3>
+                <ul>
+                {{ range .Pages }}
+                  <li>
+                    <p><strong>{{ .Title }}:</strong> {{ .Params.description }}</p>
+                    <p>{{ .Params.price }}</p>
+                  </li>
+                {{ end }}
+                </ul>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </section>
+    {{ end }}
+  {{ else if eq .Section "gallery" }}
+    <div class="gallery-carousel">
+      {{ range where .Site.Pages "Section" "gallery" }}
+        <div><img src="{{ .Params.img }}"/></div>
       {{ end }}
-    </section>
+    </div>
+    <div class="buttons">
+      <button class="prev half-button">Prev</button>
+      <button class="next half-button">Next</button>
+    </div>
   {{ end }}
 </div>
 

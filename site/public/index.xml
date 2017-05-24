@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tasty Licks</title>
+    <link>/</link>
+    <description>Recent content on Tasty Licks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 May 2017 13:03:58 -0400</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>chilled wild louisiana gulf shrimp</title>
+      <link>/food/shrimp/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/shrimp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crispy imperial rolls</title>
+      <link>/food/imperial-roll/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/imperial-roll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>crispy vegetarian imperial rolls</title>
+      <link>/food/vegan-imperial-roll/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/vegan-imperial-roll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>half dozen oysters</title>
+      <link>/food/oysters/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/oysters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>live atlantic sea scallop</title>
+      <link>/food/scallop/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/scallop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slanted door spring rolls</title>
+      <link>/food/spring-roll/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/spring-roll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spicy ahi tuna tartare</title>
+      <link>/food/tartare/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/tartare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vegetarian spring rolls</title>
+      <link>/food/vegan-spring-roll/</link>
+      <pubDate>Wed, 17 May 2017 13:03:58 -0400</pubDate>
+      
+      <guid>/food/vegan-spring-roll/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
