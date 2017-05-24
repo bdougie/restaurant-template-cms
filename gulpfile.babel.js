@@ -48,8 +48,12 @@ gulp.task("js", (cb) => {
     cb();
   });
 
-  gulp.src(["./src/js/**/*", "!./src/js/app.js", "!./src/js/cms.js"])
+  gulp.src(["./src/js/**/*", "!./src/js/app.js", "!./src/js/cms.js", "!./src/js/cms/**/*"])
     .pipe(gulp.dest("./dist/js"))
+    .pipe(browserSync.stream())
+
+  gulp.src(["./src/js/cms/**/*"])
+    .pipe(gulp.dest("./dist/cms"))
     .pipe(browserSync.stream())
 });
 
