@@ -48,7 +48,7 @@ gulp.task("js", (cb) => {
     cb();
   });
 
-  gulp.src(["./src/js/**/*", "!./src/js/app.js"])
+  gulp.src(["./src/js/**/*", "!./src/js/app.js", "!./src/js/cms.js"])
     .pipe(gulp.dest("./dist/js"))
     .pipe(browserSync.stream())
 });
