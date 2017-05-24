@@ -12,7 +12,8 @@ export default class DrinkPreview extends Component {
 
     return <section className="content" style={{padding: 16}}>
       <h1>Drinks</h1>
-      <h3>{ data.type }</h3>
+      <h2><em>{ data.type }</em></h2>
+      <hr/>
       <ul>
         <li>
           <p><strong>{ data.title }:</strong> { data.description }</p>

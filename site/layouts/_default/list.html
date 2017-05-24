@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 
-<div class="content container">
+<div class="content container {{ .Section | urlize }}">
   <h1>{{ .Section }}</h1>
   {{ if eq .Section "food" }}
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
@@ -33,7 +33,8 @@
           {{ range $key, $value := $taxonomy }}
             {{ if eq $key "drinks"}}
               {{ range $value.Pages.GroupByParam "type" }}
-                <h3>{{ .Key }}</h3>
+                <h2><em>{{ .Key }}</em></h3>
+                <hr>
                 <ul>
                 {{ range .Pages }}
                   <li>
