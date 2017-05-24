@@ -10,7 +10,7 @@ export default class GalleryPreview extends Component {
     const {entry, widgetFor, getAsset} = this.props;
     const data = entry.get("data") ? entry.get("data").toJS() : {};
 
-    return <div className="img-wrapper" style={{padding: '16px'}}>
+    return <div className="img-wrapper" style={{padding: 16}}>
       <h2>Your preview for { data.title }</h2>
       { data.image &&
         <img src={getAsset(data.image).toString()} />

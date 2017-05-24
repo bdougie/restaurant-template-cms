@@ -5,12 +5,12 @@
     margin: 0 0 64px 0;
   }
 
-  h2, h3 {
+  h2 em, h3 {
     text-transform: capitalize;
   }
 
-  h2:after {
-    content: '.';
+  h2 em:after {
+    content: '. ';
     color: #ff7660;
   }
 
