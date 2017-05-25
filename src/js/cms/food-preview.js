@@ -12,7 +12,7 @@ export default class FoodPreview extends Component {
 
     return <section className="content" style={{padding: 16}}>
       <h1>Food</h1>
-      <h2>{ data.Categories.map((category) => <em>{ category }</em>)}</h2>
+      <h2>{ data.categories.map((category) => <em>{ category }</em>)}</h2>
       <hr/>
       <h3>{ data.type }</h3>
       <ul>

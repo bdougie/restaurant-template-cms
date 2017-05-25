@@ -13,7 +13,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Name of Item", name: "title", widget: "string"}
-      - {label: "Supported Meals", name: "Categories", widget: "list", default: ["lunch", "dinner"]}
+      - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
       - {label: "Price", name: "price", widget: "string"}
@@ -23,7 +23,7 @@ collections:
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Name of Drink", name: "title", widget: "string"}
-      - {label: "Drink Marker", name: "Categories", widget: "hidden", default: ["drinks"]}
+      - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Drink", name: "type", widget: "string", default: "beer"}
       - {label: "Price", name: "price", widget: "string"}
