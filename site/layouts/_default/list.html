@@ -1,6 +1,6 @@
 {{ partial "header" . }}
 
-<div class="content container {{ .Section | urlize }}">
+<div class="content container {{ .Title }} {{ .Section | urlize }}">
   <h1>{{ .Section }}</h1>
   {{ if eq .Section "food" }}
     {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
