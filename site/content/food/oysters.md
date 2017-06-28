@@ -1,12 +1,14 @@
 ---
-date: 2017-05-17T13:03:58-04:00
-categories: 
+categories:
   - lunch
   - dinner
-type: raw bar
-title: half dozen oysters
+date: 2017-05-17T17:03:58.000Z
+title: half oyster
 description: >-
-  kusshi (bc), marin miyagi (ca), beausoleil (nb), island creek (ma), pacific gold (ca)
+  kusshi (bc), marin miyagi (ca), beausoleil (nb), island creek (ma), pacific
+  gold (ca)
+type: raw bar
 price: 24
 ---
+
 

@@ -1,10 +1,12 @@
 ---
-date: 2017-05-17T13:03:58-04:00
 categories:
   - lunch
+date: 2017-05-17T17:03:58.000Z
+title: vegan spring rolls
+description: 'tofu, shiitake, cabbage, mint, peanut sauce'
 type: rolls
-title: vegetarian spring rolls
-description: tofu, shiitake, cabbage, mint, peanut sauce
 price: 12
 ---
+
+
 
