@@ -161,6 +161,11 @@ img {
   border-radius: 5px;
   max-width: 100%;
   min-height: 525px;
+
+  @media (max-width: 30em) {
+    min-height: 200px;
+    max-height: 200px;
+  }
 }
 
 table {
@@ -717,6 +722,10 @@ a.sidebar-nav-item {
 .content {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
+  small {
+    text-align: center;
+  }
 }
 
 @media (min-width: 48em) {
