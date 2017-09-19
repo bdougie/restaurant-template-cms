@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: bdougie/hugo-restaurant-template
-  branch: master
+  name: git-gateway
 
 media_folder: "src/img/gallery" # Folder where user uploaded files should go
 public_folder: "img/gallery"

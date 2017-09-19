@@ -3,7 +3,7 @@
   publish = "dist"
   
 [template.environment]
-  HUGO_VERSION = "0.20"
+  HUGO_VERSION = "0.26"
 
 [context.deploy-preview]
   command = "npm run build-preview"
