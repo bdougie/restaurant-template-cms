@@ -15,3 +15,16 @@ collections:
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
       - {label: "Price", name: "price", widget: "string"}
+<<<<<<< HEAD
+=======
+  - name: drinks
+    label: "Drink Item" # Used in the UI, ie.: "New Post"
+    folder: "site/content/drinks" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Name of Drink", name: "title", widget: "string"}
+      - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Type of Drink", name: "type", widget: "string", default: "beer"}
+      - {label: "Price", name: "price", widget: "string"}
+>>>>>>> add drinks
