@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+
+media_folder: "src/img/gallery" # Folder where user uploaded files should go
+public_folder: "img/gallery"
+
+collections:
+  - name: food
+    label: "Food Item" # Used in the UI, ie.: "New Post"
+    folder: "site/content/food" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - {label: "Name of Item", name: "title", widget: "string"}
+      - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch", "dinner"]}
+      - {label: "Ingredients/Description", name: "description", widget: "text"}
+      - {label: "Type of Food", name: "type", widget: "string", default: "raw bar"}
+      - {label: "Price", name: "price", widget: "string"}
