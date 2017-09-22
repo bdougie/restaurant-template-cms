@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "dist"
   
-[template.environment]
+[build.environment]
   HUGO_VERSION = "0.26"
 
 [context.deploy-preview]
