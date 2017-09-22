@@ -9,8 +9,11 @@ title = "Tasty Licks"
     name = "Food"
     url  = "/food"
     weight = 1
-[[menu.main]
+[[menu.main]]
+    name = "Drinks"
+    url  = "/drinks"
+    weight = 2
 [[menu.main]]
     name = "About"
     url  = "/about"
-    weight = 2
+    weight = 3
