@@ -21,3 +21,7 @@ title = "Tasty Licks"
     name = "Gallery"
     url  = "/gallery"
     weight = 4
+[[menu.main]]
+     name = "Make A Reservation"
+     url  = "/contact"
+     weight = 5
